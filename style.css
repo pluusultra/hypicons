@@ -1,0 +1,64 @@
+body,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  color: white;
+}
+
+body {
+  background: linear-gradient(to left, #232453, #1b3faa, #131126);
+}
+ul {
+  list-style-type: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  height: 74px;
+  padding-top: 28px;
+}
+
+.header__image {
+  width: 174px;
+  height: 18px;
+  margin-left: 40px;
+}
+
+.menu__list {
+  font-family: "IBM Plex Mono", sans-serif;
+  font-weight: 400;
+  display: flex;
+  column-gap: 40px;
+}
+
+.button {
+  border: none;
+  text-transform: capitalize;
+  font-family: "IBM Plex Mono", sans-serif;
+  font-weight: 400;
+}
+
+.header__button {
+  padding: 4px 18px;
+  background-color: #9400ff;
+  color: white;
+  align-self: flex-start;
+  border-radius: 200px;
+  margin-right: 15px;
+}
+
+.wrapper {
+  background-image: url("./images/section-1-bg.jpg");
+  height: 100vh;
+  max-width: 1440px;
+  margin: auto;
+}
