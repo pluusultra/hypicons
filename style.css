@@ -78,6 +78,10 @@ ul {
   height: 100vh;
   max-width: 1440px;
   margin: auto;
+  /* чтобы работало адаптивное изменение бэкграунда */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 button {
