@@ -33,6 +33,7 @@ ul {
   max-height: 18px;
   margin-left: 40px;
   width: 100%;
+  margin-bottom: 28px;
 }
 
 .header__logo {
@@ -61,14 +62,16 @@ ul {
   text-transform: capitalize;
   font-family: "IBM Plex Mono", sans-serif;
   font-weight: 400;
+  background-color: #9400ff;
+  color: white;
+  border-radius: 200px;
+  line-height: 1.53;
+  font-size: 13px;
 }
 
 .header__button {
   padding: 4px 18px;
-  background-color: #9400ff;
-  color: white;
   align-self: flex-start;
-  border-radius: 200px;
   margin-right: 15px;
   z-index: 99;
 }
@@ -89,6 +92,47 @@ button {
   border: none;
 }
 
+.info {
+  margin: 75px 98px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.info__header {
+  font-size: 16px;
+  line-height: 1.56;
+}
+.info__text {
+  font-size: 48px;
+  line-height: 1.29;
+  max-width: 578px;
+  margin: 14px 0 58px 0;
+}
+.info__button {
+  padding: 15px 42px;
+}
+
+.cards {
+  display: flex;
+  column-gap: 85px;
+  margin-top: 135px;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex-basis: 232px;
+}
+.card__header {
+  margin-bottom: 30px;
+  font-size: 15;
+  line-height: 1.66;
+}
+.card__text {
+  line-height: 1.85;
+  font-size: 16px;
+  opacity: 0.6;
+}
+
 @media (max-width: 780px) {
   .header__image {
     margin-left: 15px;
@@ -101,7 +145,6 @@ button {
 
 @media (max-width: 685px) {
   .menu__list {
-    height: 100vh;
     background-color: black;
     position: absolute;
     inset: 0;
@@ -129,7 +172,7 @@ button {
   }
 
   .header__button {
-    align-self: center;
+    align-self: start;
   }
 
   .menu__btn {
