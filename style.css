@@ -1,208 +1,101 @@
-body,
-ul,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-a {
-  margin: 0;
-  padding: 0;
-  font-family: "Manrope", sans-sm, erif;
-  font-weight: 400;
+body {
+  background-color: rgb(13, 13, 13);
   color: white;
-  text-decoration: none;
+  font-family: "Manrope", sans-serif;
+  padding: 0;
+  max-width: 1440px;
+  margin: auto;
 }
 
-body {
-  background: linear-gradient(to left, #232453, #1b3faa, #131126);
-}
 ul {
+  margin: 0;
+  padding: 0;
   list-style-type: none;
+}
+
+h1,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.button {
+  background-color: #9400ff;
+  color: white;
+  border: none;
+  font-family: "IBM Plex Mono", sans-serif;
+  font-size: 13px;
+  border-radius: 50px;
+  text-transform: capitalize;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
-  padding-top: 28px;
+  align-items: center;
 }
 
-.header__image {
-  max-width: 174px;
-  max-height: 18px;
-  margin-left: 40px;
-  width: 100%;
-  margin-bottom: 28px;
-}
-
-.header__logo {
-  z-index: 99;
-}
-
-.menu__list {
-  display: flex;
-  gap: 40px;
-}
-
-.menu__list-link {
-  font-family: "IBM Plex Mono", sans-serif;
-  font-weight: 400;
-  display: flex;
-  column-gap: 40px;
-  transition: all 0.3s;
-}
-
-.menu__list-link:hover {
-  opacity: 0.7;
-}
-
-.button {
-  border: none;
-  text-transform: capitalize;
-  font-family: "IBM Plex Mono", sans-serif;
-  font-weight: 400;
-  background-color: #9400ff;
-  color: white;
-  border-radius: 200px;
-  line-height: 1.53;
-  font-size: 13px;
+.logo {
+  padding: 28px 0 28px 40px;
 }
 
 .header__button {
   padding: 4px 18px;
-  align-self: flex-start;
-  margin-right: 15px;
-  z-index: 99;
+  margin-right: 32px;
 }
 
-.wrapper {
-  background-image: url("./images/section-1-bg.jpg");
-  height: 100vh;
-  max-width: 1440px;
-  margin: auto;
-  /* чтобы работало адаптивное изменение бэкграунда */
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-button {
-  background-color: transparent;
-  border: none;
-}
-
-.info {
-  margin: 75px 98px;
+.menu__list {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  column-gap: 40px;
 }
+
+.menu__list-link {
+  color: white;
+  text-decoration: none;
+  font-family: "IBM Plex Mono", sans-serif;
+  font-size: 13px;
+  line-height: 1.07;
+}
+
+.main {
+  padding: 0 97.5px 0 97.5px;
+}
+
 .info__header {
   font-size: 16px;
-  line-height: 1.56;
+  margin-top: 116px;
+  margin-bottom: 14px;
 }
+
 .info__text {
   font-size: 48px;
-  line-height: 1.29;
   max-width: 578px;
-  margin: 14px 0 58px 0;
+  margin-bottom: 58px;
 }
+
 .info__button {
   padding: 15px 42px;
+  margin-bottom: 125px;
+}
+
+.card__header {
+  line-height: 1.56;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.card__text {
+  line-height: 1.87;
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 65%;
+}
+
+.card {
+  max-width: 233px;
 }
 
 .cards {
   display: flex;
-  column-gap: 85px;
-  margin-top: 135px;
-  flex-wrap: wrap;
-}
-
-.card {
-  flex-basis: 232px;
-}
-.card__header {
-  margin-bottom: 30px;
-  font-size: 15;
-  line-height: 1.66;
-}
-.card__text {
-  line-height: 1.85;
-  font-size: 16px;
-  opacity: 0.6;
-}
-
-@media (max-width: 780px) {
-  .header__image {
-    margin-left: 15px;
-  }
-  .menu__list {
-    margin: 0 20px;
-    column-gap: 15px;
-  }
-}
-
-@media (max-width: 685px) {
-  .menu__list {
-    background-color: black;
-    position: absolute;
-    inset: 0;
-    flex-direction: column;
-    row-gap: 50px;
-    justify-content: center;
-    align-items: center;
-    transform: translateX(-680px);
-    transition: all 0.3s;
-    margin: 0;
-  }
-
-  .menu__list--visible {
-    transform: translateX(0);
-    transition: all 0.3s;
-  }
-
-  .header__image {
-    margin-right: 30px;
-  }
-
-  .header {
-    justify-content: flex-start;
-    align-items: center;
-  }
-
-  .header__button {
-    align-self: start;
-  }
-
-  .menu__btn {
-    display: flex;
-    position: fixed;
-    justify-content: center;
-    flex-direction: column;
-    gap: 5px;
-    top: 32px;
-    right: 5px;
-    z-index: 99;
-    height: 20px;
-    width: 40px;
-    cursor: pointer;
-    transition: all 0.3s;
-  }
-
-  .menu__btn:hover {
-    opacity: 0.7;
-  }
-
-  .menu__btn span {
-    height: 2px;
-    background-color: white;
-    width: 100%;
-  }
-}
-[] @media (max-width: 380px) {
-  .header__image {
-    height: 13px;
-    width: 100px;
-  }
+  column-gap: 70px;
 }
