@@ -99,3 +99,19 @@ p {
   display: flex;
   column-gap: 70px;
 }
+
+.background {
+  position: absolute;
+  inset: 0;
+  background-image: url("./images/section-1-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -2;
+}
+
+.background-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-color: rgba(0, 0, 0, 0.5);
+}
