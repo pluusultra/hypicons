@@ -42,11 +42,17 @@ p {
 .header__button {
   padding: 4px 18px;
   margin-right: 32px;
+  min-width: 91px;
 }
 
 .menu__list {
   display: flex;
   column-gap: 40px;
+  align-items: center;
+}
+
+.menu__list-item {
+  white-space: nowrap;
 }
 
 .menu__list-link {
@@ -59,6 +65,9 @@ p {
 
 .main {
   padding: 0 97.5px 0 97.5px;
+}
+.info {
+  margin: auto;
 }
 
 .info__header {
@@ -76,6 +85,7 @@ p {
 .info__button {
   padding: 15px 42px;
   margin-bottom: 125px;
+  max-width: 212px;
 }
 
 .card__header {
@@ -92,7 +102,7 @@ p {
 }
 
 .card {
-  max-width: 233px;
+  flex-basis: 233px;
 }
 
 .cards {
@@ -114,4 +124,135 @@ p {
   inset: 0;
   z-index: -1;
   background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 780px) {
+  .info__header {
+    margin-top: 50px;
+    font-size: 14px;
+  }
+  .info__text {
+    font-size: 38px;
+  }
+  .info__button {
+    margin-bottom: 50px;
+  }
+  cards {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 730px) {
+  .header {
+    gap: 20px;
+  }
+
+  .cards {
+    flex-wrap: wrap;
+    gap: 50px;
+    margin: auto;
+    justify-content: center;
+  }
+  .main {
+    padding: 0 50px 0;
+  }
+  .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .info__button {
+    margin-bottom: 50px;
+  }
+
+  .info__header {
+    margin-top: 70px;
+    font-size: 14px;
+  }
+  .info__text {
+    font-size: 24px;
+    max-width: 440px;
+    text-align: center;
+  }
+  .logo {
+    padding: 28px 0 28px 10px;
+  }
+  .header__button {
+    margin-right: 10px;
+  }
+  .menu__list {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 630px) {
+  .main {
+    padding: 0 20px 0;
+  }
+
+  .card__text {
+    font-size: 14px;
+  }
+  .header {
+    gap: 15px;
+  }
+  .info__text {
+    margin-bottom: 30px;
+  }
+  .info__header {
+    margin-top: 40px;
+  }
+  .cards {
+    gap: 25px;
+  }
+  .logo {
+    padding: 28px 0 28px 10px;
+  }
+  .header__button {
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 590px) {
+  .menu {
+    position: absolute;
+    inset: 0;
+    background-color: black;
+    z-index: 2;
+    transform: translateX(-730px);
+    transition: transform 0.3s ease;
+  }
+  .menu_active {
+    transform: translateX(0);
+    transition: transform 0.3s ease;
+  }
+  .menu__list {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    height: 100vh;
+  }
+
+  .button-open {
+    height: 21px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 24px;
+    right: 10px;
+    cursor: pointer;
+    z-index: 5;
+  }
+
+  div > span {
+    height: 7px;
+    width: 25px;
+
+    border-bottom: 2px solid white;
+  }
+
+  .header__button {
+    margin-right: 55px;
+  }
 }
