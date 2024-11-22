@@ -64,7 +64,7 @@ p {
 }
 
 .main {
-  padding: 0 97.5px 0 97.5px;
+  padding: 0 98px 0 98px;
 }
 .info {
   margin: auto;
@@ -137,7 +137,7 @@ p {
   .info__button {
     margin-bottom: 50px;
   }
-  cards {
+  .cards {
     gap: 30px;
   }
 }
