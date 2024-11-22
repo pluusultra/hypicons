@@ -1,259 +1,310 @@
 body {
-  background-color: rgb(13, 13, 13);
-  color: white;
-  font-family: "Manrope", sans-serif;
-  padding: 0;
-  max-width: 1440px;
-  margin: auto;
-  height: 100svh;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-family: "Manrope", sans-serif;
+    padding: 0;
+    max-width: 1440px;
+    margin: auto;
+    height: 100vh;
 }
 
 ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
 }
 
 h1,
 p {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 .button {
-  background-color: #9400ff;
-  color: white;
-  border: none;
-  font-family: "IBM Plex Mono", sans-serif;
-  font-size: 13px;
-  border-radius: 50px;
-  text-transform: capitalize;
+    background-color: #9400ff;
+    color: white;
+    border: none;
+    font-family: "IBM Plex Mono", sans-serif;
+    font-size: 13px;
+    border-radius: 50px;
+    text-transform: capitalize;
 }
 
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logo {
-  padding: 28px 0 28px 40px;
+    padding: 28px 0 28px 40px;
 }
 
 .header__button {
-  padding: 4px 18px;
-  margin-right: 32px;
-  min-width: 91px;
+    padding: 4px 18px;
+    margin-right: 32px;
+    min-width: 91px;
 }
 
 .menu__list {
-  display: flex;
-  column-gap: 40px;
-  align-items: center;
+    display: flex;
+    column-gap: 40px;
+    align-items: center;
 }
 
 .menu__list-item {
-  white-space: nowrap;
+    white-space: nowrap;
 }
 
 .menu__list-link {
-  color: white;
-  text-decoration: none;
-  font-family: "IBM Plex Mono", sans-serif;
-  font-size: 13px;
-  line-height: 1.07;
+    color: white;
+    text-decoration: none;
+    font-family: "IBM Plex Mono", sans-serif;
+    font-size: 13px;
+    line-height: 1.07;
 }
 
-.main {
-  padding: 0 98px 0 98px;
-}
+/*.wrapper {*/
+/*    padding: 0 98px 0 98px;*/
+/*}*/
+
 .info {
-  margin: auto;
+    margin: auto;
+    padding: 136px;
 }
 
 .info__header {
-  font-size: 16px;
-  margin-top: 116px;
-  margin-bottom: 14px;
+    font-size: 16px;
+    margin-top: 116px;
+    margin-bottom: 14px;
 }
 
 .info__text {
-  font-size: 48px;
-  max-width: 578px;
-  margin-bottom: 58px;
+    font-size: 48px;
+    max-width: 578px;
+    margin-bottom: 58px;
 }
 
 .info__button {
-  padding: 15px 42px;
-  margin-bottom: 125px;
-  max-width: 212px;
+    padding: 15px 42px;
+    margin-bottom: 125px;
+    max-width: 212px;
 }
 
 .card__header {
-  line-height: 1.56;
-  font-size: 16px;
-  font-weight: 400;
+    line-height: 1.56;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .card__text {
-  line-height: 1.87;
-  font-size: 16px;
-  font-weight: 400;
-  opacity: 65%;
+    line-height: 1.87;
+    font-size: 16px;
+    font-weight: 400;
+    opacity: 65%;
 }
 
 .card {
-  flex-basis: 233px;
+    flex-basis: 233px;
 }
 
 .cards {
-  display: flex;
-  column-gap: 70px;
+    display: flex;
+    column-gap: 70px;
+    padding-bottom: 136px;
 }
 
 .background {
-  position: absolute;
-  inset: 0;
-  background-image: url("./images/section-1-bg.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  z-index: -2;
+    background-image: url("./images/section-1-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-.background-overlay {
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  background-color: rgba(0, 0, 0, 0.5);
+.wrapper {
+    padding: 0 98px 0 98px;
+}
+
+.description {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 148px;
+}
+
+.description__wrapper {
+    max-width: 424px;
+    margin: 350px 0 0 113px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0;
+}
+
+.description__image {
+    margin-top: 100px;
+}
+
+.description__header {
+    font-size: 48px;
+    margin-bottom: 22px;
+}
+
+.description__list {
+    line-height: 1.875;
+    margin-bottom: 70px;
+    padding-left: 30px;
+}
+
+.desctiption__button {
+    padding: 15px 42px;
+    margin-bottom: 125px;
+    max-width: 212px;
 }
 
 @media (max-width: 780px) {
-  .info__header {
-    margin-top: 50px;
-    font-size: 14px;
-  }
-  .info__text {
-    font-size: 38px;
-  }
-  .info__button {
-    margin-bottom: 50px;
-  }
-  .cards {
-    gap: 30px;
-  }
+    .info__header {
+        margin-top: 50px;
+        font-size: 14px;
+    }
+
+    .info__text {
+        font-size: 38px;
+    }
+
+    .info__button {
+        margin-bottom: 50px;
+    }
+
+    .cards {
+        gap: 30px;
+    }
 }
 
 @media (max-width: 730px) {
-  .header {
-    gap: 20px;
-  }
+    .header {
+        gap: 20px;
+    }
 
-  .cards {
-    flex-wrap: wrap;
-    gap: 50px;
-    margin: auto;
-    justify-content: center;
-  }
-  .main {
-    padding: 0 50px 0;
-  }
-  .info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .info__button {
-    margin-bottom: 50px;
-  }
+    .cards {
+        flex-wrap: wrap;
+        gap: 50px;
+        margin: auto;
+        justify-content: center;
+    }
 
-  .info__header {
-    margin-top: 70px;
-    font-size: 14px;
-  }
-  .info__text {
-    font-size: 24px;
-    max-width: 440px;
-    text-align: center;
-  }
-  .logo {
-    padding: 28px 0 28px 10px;
-  }
-  .header__button {
-    margin-right: 10px;
-  }
-  .menu__list {
-    gap: 10px;
-  }
+    .wrapper {
+        padding: 0 50px 0;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info__button {
+        margin-bottom: 50px;
+    }
+
+    .info__header {
+        margin-top: 70px;
+        font-size: 14px;
+    }
+
+    .info__text {
+        font-size: 24px;
+        max-width: 440px;
+        text-align: center;
+    }
+
+    .logo {
+        padding: 28px 0 28px 10px;
+    }
+
+    .header__button {
+        margin-right: 10px;
+    }
+
+    .menu__list {
+        gap: 10px;
+    }
 }
 
 @media (max-width: 630px) {
-  .main {
-    padding: 0 20px 0;
-  }
+    .wrapper {
+        padding: 0 20px 0;
+    }
 
-  .card__text {
-    font-size: 14px;
-  }
-  .header {
-    gap: 15px;
-  }
-  .info__text {
-    margin-bottom: 30px;
-  }
-  .info__header {
-    margin-top: 40px;
-  }
-  .cards {
-    gap: 25px;
-  }
-  .logo {
-    padding: 28px 0 28px 10px;
-  }
-  .header__button {
-    margin-right: 10px;
-  }
+    .card__text {
+        font-size: 14px;
+    }
+
+    .header {
+        gap: 15px;
+    }
+
+    .info__text {
+        margin-bottom: 30px;
+    }
+
+    .info__header {
+        margin-top: 40px;
+    }
+
+    .cards {
+        gap: 25px;
+    }
+
+    .logo {
+        padding: 28px 0 28px 10px;
+    }
+
+    .header__button {
+        margin-right: 10px;
+    }
 }
 
 @media (max-width: 590px) {
-  .menu {
-    position: absolute;
-    inset: 0;
-    background-color: black;
-    z-index: 2;
-    transform: translateX(-730px);
-    transition: transform 0.3s ease;
-  }
-  .menu_active {
-    transform: translateX(0);
-    transition: transform 0.3s ease;
-  }
-  .menu__list {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 80px;
-    height: 100vh;
-  }
+    .menu {
+        position: fixed;
+        inset: 0;
+        background-color: black;
+        z-index: 2;
+        transform: translateX(-730px);
+        transition: transform 0.3s ease;
+    }
 
-  .button-open {
-    height: 21px;
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    top: 24px;
-    right: 10px;
-    cursor: pointer;
-    z-index: 5;
-  }
+    .menu_active {
+        transform: translateX(0);
+        transition: transform 0.3s ease;
+    }
 
-  div > span {
-    height: 7px;
-    width: 25px;
+    .menu__list {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 80px;
+        height: 100vh;
+    }
 
-    border-bottom: 2px solid white;
-  }
+    .button-open {
+        height: 21px;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 24px;
+        right: 10px;
+        cursor: pointer;
+        z-index: 5;
+    }
 
-  .header__button {
-    margin-right: 55px;
-  }
+    div > span {
+        height: 7px;
+        width: 25px;
+
+        border-bottom: 2px solid white;
+    }
+
+    .header__button {
+        margin-right: 55px;
+    }
 }
