@@ -5,6 +5,7 @@ body {
   padding: 0;
   max-width: 1440px;
   margin: auto;
+  height: 100vh;
 }
 
 ul {
