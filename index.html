@@ -4,6 +4,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="./style.css"/>
+    <link rel="stylesheet" href="./adaptive.css">
     <script src="./index.js" defer></script>
     <title>Document</title>
 </head>
@@ -12,7 +13,7 @@
 
 <div class="background">
     <header class="header">
-        <img src="./images/logo.svg" alt="" class="logo"/>
+        <img src="./images/logo.svg" alt="" class="header__logo logo"/>
         <nav class="menu">
             <ul class="menu__list">
                 <li class="menu__list-item">
@@ -207,8 +208,29 @@
                 <li class="examples__list-item"><a class="examples__list-link" href="#">Weather</a></li>
             </ul>
         </div>
-
     </section>
+    <section class="request">
+        <img src="./images/request.png" alt="" class="request__image">
+        <div class="request__wrapper">
+            <h2 class="request__header">Icon request</h2>
+            <p class="request__text">If you find that the pack is missing any icons, feel free to send me a message and
+                I will do my best to create one. Purchasing the pack will give you access to any future updates.</p>
+            <button class="request__button button">Get in touch</button>
+        </div>
+    </section>
+    <section class="purchasing">
+
+        <h2 class="purchasing__header">Grab the pack</h2>
+        <p class="purchasing__text">By purchasing the pack you will get access to future additions and updates – for
+            life!</p>
+        <button class="purchasing__button button">Buy now – $14.99</button>
+        <div class="overlay"></div>
+    </section>
+    <footer class="footer">
+        <img src="./images/logo.svg" alt="" class="footer__logo logo">
+        <p class="footer__text">Created by <span>@rathniley</span></p>
+        <p class="footer__text">Copyright © 2020. All rights reserved.</p>
+    </footer>
 </div>
 </body>
 </html>

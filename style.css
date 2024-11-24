@@ -14,8 +14,7 @@ ul {
     list-style-type: none;
 }
 
-h1,
-p {
+h1, h2, h3, h4, h5, h6, p {
     margin: 0;
     padding: 0;
 }
@@ -28,6 +27,8 @@ p {
     font-size: 13px;
     border-radius: 50px;
     text-transform: capitalize;
+    white-space: nowrap;
+    cursor: pointer;
 }
 
 .header {
@@ -36,7 +37,7 @@ p {
     align-items: center;
 }
 
-.logo {
+.header__logo {
     padding: 28px 0 28px 40px;
 }
 
@@ -159,7 +160,6 @@ p {
     margin-bottom: 125px;
     max-width: 212px;
     min-width: 91px;
-    white-space: nowrap;
 }
 
 .renders__header {
@@ -179,6 +179,14 @@ p {
 .renders {
     padding-bottom: 64px;
 }
+
+.examples {
+    display: flex;
+    gap: 21px;
+    justify-content: space-between;
+    padding-bottom: 95px;
+}
+
 .examples__header {
     font-size: 25px;
     margin-bottom: 25px;
@@ -203,6 +211,98 @@ p {
     text-decoration: none;
 }
 
+.request__button {
+    padding: 15px 42px;
+}
+
+.request {
+    display: flex;
+    column-gap: 124px;
+    justify-content: center;
+    margin-bottom: 223px;
+}
+
+.request__text {
+    line-height: 1.875;
+    margin-bottom: 26px;
+}
+
+.request__wrapper {
+    max-width: 499px;
+}
+
+.request__header {
+    margin-bottom: 35px;
+}
+
+.request__image {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    margin-left: 100px;
+}
+
+.purchasing {
+    background-image: url('./images/purchasing-bg.png');
+    text-align: center;
+    padding: 105px 0 125px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.purchasing__header {
+    font-size: 51px;
+    line-height: 1.072;
+    padding-bottom: 32px;
+    z-index: 2;
+}
+
+.purchasing__button {
+    padding: 15px 42px;
+    z-index: 2;
+}
+
+.purchasing__text {
+    color: #999;
+    font-size: 18px;
+    line-height: 1.444;
+    margin-bottom: 42px;
+    z-index: 2;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.footer__logo {
+    margin: 80px 0 24px;
+}
+
+.footer__text span {
+    color: #9400FF;
+}
+
+.footer__text:first-of-type {
+    margin-bottom: 32px;
+}
+
+.footer__text:last-of-type {
+    font-size: 11px;
+}
+
 @media (hover: hover) {
     button:hover {
         opacity: 0.7;
@@ -215,7 +315,7 @@ p {
     }
 }
 
-@media (hover: hover)  {
+@media (hover: hover) {
     a:hover {
         opacity: 0.8;
     }
@@ -227,233 +327,4 @@ p {
     }
 }
 
-.examples {
-    display: flex;
-    gap: 21px;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding-bottom: 95px;
-}
 
-@media (max-width: 1250px) {
-    .description__list {
-        padding-left: 0px;
-    }
-
-    .description__image {
-        width: 70%;
-        height: 70%;
-    }
-
-
-}
-
-@media (max-width: 1150px) {
-    .description__wrapper {
-        margin: 150px 0 0 50px;
-    }
-}
-
-@media (max-width: 950px) {
-    .wrapper {
-        padding: 0 70px 0 70px;
-    }
-
-    .description__wrapper {
-        margin: 50px 0 0 25px;
-    }
-
-    .description__image {
-        margin-top: 15px;
-    }
-
-    .description__header {
-        font-size: 30px
-    }
-
-    .description {
-        gap: 15px;
-    }
-
-    .desctiption__button {
-        margin-bottom: 50px;
-    }
-}
-
-@media (max-width: 805px) {
-    .examples {
-        justify-content: center;
-        padding-bottom: 40px;
-    }
-}
-
-@media (max-width: 780px) {
-    .info__header {
-        margin-top: 50px;
-        font-size: 14px;
-    }
-
-    .info__text {
-        font-size: 38px;
-    }
-
-    .info__button {
-        margin-bottom: 50px;
-    }
-
-    .cards {
-        gap: 30px;
-    }
-
-    .description {
-        gap: 0;
-        flex-direction: column;
-        align-items: center;
-        padding-bottom: 50px
-    }
-
-    .description__wrapper {
-        margin: 30px 0 0 0;
-        text-align: center;
-        align-items: center;
-    }
-
-    .description__image {
-        height: 100%;
-        width: 100%;
-    }
-    .renders__header {
-        font-size: 20px
-    }
-
-}
-
-@media (max-width: 730px) {
-    .header {
-        gap: 20px;
-    }
-
-    .cards {
-        flex-wrap: wrap;
-        gap: 50px;
-        margin: auto;
-        justify-content: center;
-    }
-
-    .wrapper {
-        padding: 0 50px 0;
-    }
-
-    .info {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .info__button {
-        margin-bottom: 50px;
-    }
-
-    .info__header {
-        margin-top: 70px;
-        font-size: 14px;
-    }
-
-    .info__text {
-        font-size: 24px;
-        max-width: 440px;
-        text-align: center;
-    }
-
-    .logo {
-        padding: 28px 0 28px 10px;
-    }
-
-    .header__button {
-        margin-right: 10px;
-    }
-
-    .menu__list {
-        gap: 10px;
-    }
-}
-
-@media (max-width: 630px) {
-    .wrapper {
-        padding: 0 20px 0;
-    }
-
-    .card__text {
-        font-size: 14px;
-    }
-
-    .header {
-        gap: 15px;
-    }
-
-    .info__text {
-        margin-bottom: 30px;
-    }
-
-    .info__header {
-        margin-top: 40px;
-    }
-
-    .cards {
-        gap: 25px;
-    }
-
-    .logo {
-        padding: 28px 0 28px 10px;
-    }
-
-    .header__button {
-        margin-right: 10px;
-    }
-}
-
-@media (max-width: 590px) {
-    .menu {
-        position: fixed;
-        inset: 0;
-        background-color: black;
-        z-index: 2;
-        transform: translateX(-730px);
-        transition: transform 0.3s ease;
-    }
-
-    .menu_active {
-        transform: translateX(0);
-        transition: transform 0.3s ease;
-    }
-
-    .menu__list {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 80px;
-        height: 100vh;
-    }
-
-    .button-open {
-        height: 21px;
-        display: flex;
-        flex-direction: column;
-        position: fixed;
-        top: 24px;
-        right: 10px;
-        cursor: pointer;
-        z-index: 5;
-    }
-
-    div > span {
-        height: 7px;
-        width: 25px;
-
-        border-bottom: 2px solid white;
-    }
-
-    .header__button {
-        margin-right: 55px;
-    }
-}

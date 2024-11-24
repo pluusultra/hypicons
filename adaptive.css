@@ -1,0 +1,255 @@
+@media (max-width: 1250px) {
+    .description__list {
+        padding-left: 0px;
+    }
+
+    .description__image {
+        width: 70%;
+        height: 70%;
+    }
+
+
+}
+
+@media (max-width: 1150px) {
+    .description__wrapper {
+        margin: 150px 0 0 50px;
+    }
+    .examples {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 950px) {
+
+    .wrapper {
+        padding: 0 70px 0 70px;
+    }
+
+    .description__wrapper {
+        margin: 50px 0 0 25px;
+    }
+
+    .description__image {
+        margin-top: 15px;
+    }
+
+    .description__header {
+        font-size: 30px
+    }
+
+    .request {
+        margin-bottom: 70px;
+    }
+
+    .description {
+        gap: 15px;
+    }
+
+    .description__button {
+        margin-bottom: 50px;
+    }
+    .request {
+        column-gap: 40px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .request__wrapper {
+        display:flex;
+        align-items: center;
+        flex-direction: column;
+
+    }
+    .request__image {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 805px) {
+    .examples {
+        justify-content: center;
+        padding-bottom: 40px;
+    }
+    .request {
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 780px) {
+    .info__header {
+        margin-top: 50px;
+        font-size: 14px;
+    }
+
+    .info__text {
+        font-size: 38px;
+    }
+
+    .info__button {
+        margin-bottom: 50px;
+    }
+
+    .cards {
+        gap: 30px;
+    }
+
+    .description {
+        gap: 0;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 50px
+    }
+
+    .description__wrapper {
+        margin: 30px 0 0 0;
+        text-align: center;
+        align-items: center;
+    }
+
+    .description__image {
+        height: 100%;
+        width: 100%;
+    }
+
+    .renders__header {
+        font-size: 20px
+    }
+
+}
+
+@media (max-width: 730px) {
+    .header {
+        gap: 20px;
+    }
+
+    .cards {
+        flex-wrap: wrap;
+        gap: 50px;
+        margin: auto;
+        justify-content: center;
+    }
+
+    .wrapper {
+        padding: 0 50px 0;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info__button {
+        margin-bottom: 50px;
+    }
+
+    .info__header {
+        margin-top: 70px;
+        font-size: 14px;
+    }
+
+    .info__text {
+        font-size: 24px;
+        max-width: 440px;
+        text-align: center;
+    }
+
+    .logo {
+        padding: 28px 0 28px 10px;
+    }
+
+    .header__button {
+        margin-right: 10px;
+    }
+
+    .menu__list {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 630px) {
+    .wrapper {
+        padding: 0 20px 0;
+    }
+
+    .card__text {
+        font-size: 14px;
+    }
+
+    .header {
+        gap: 15px;
+    }
+
+    .info__text {
+        margin-bottom: 30px;
+    }
+
+    .info__header {
+        margin-top: 40px;
+    }
+
+    .cards {
+        gap: 25px;
+    }
+
+    .logo {
+        padding: 28px 0 28px 10px;
+    }
+
+    .header__button {
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 590px) {
+    .menu {
+        position: fixed;
+        inset: 0;
+        background-color: black;
+        z-index: 2;
+        transform: translateX(-730px);
+        transition: transform 0.3s ease;
+    }
+
+    .menu_active {
+        transform: translateX(0);
+        transition: transform 0.3s ease;
+    }
+
+    .menu__list {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 80px;
+        height: 100vh;
+    }
+
+    .button-open {
+        height: 21px;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 24px;
+        right: 10px;
+        cursor: pointer;
+        z-index: 5;
+    }
+
+    div > span {
+        height: 7px;
+        width: 25px;
+
+        border-bottom: 2px solid white;
+    }
+
+    .header__button {
+        margin-right: 55px;
+    }
+    .examples {
+        column-gap: 120px;
+    text-align: center;
+
+    }
+}
